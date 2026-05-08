@@ -1,0 +1,255 @@
+:root {
+    --arsenal-red: #f85757;
+    --arsenal-white: #FFFFFF;
+    --arsenal-gold: #FFB81C;
+    --dark-bg: #0A0E27;
+    --card-bg: #1A1F3A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #1A1F3A 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--arsenal-red) 0%, #D62121 100%);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 51, 51, 0.3);
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--arsenal-white);
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    color: var(--arsenal-gold);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chart-wrapper {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 51, 51, 0.2);
+    transition: all 0.3s ease;
+}
+
+.chart-wrapper:hover {
+    border-color: rgba(255, 51, 51, 0.5);
+    box-shadow: 0 12px 48px rgba(255, 51, 51, 0.2);
+}
+
+.chart-header {
+    margin-bottom: 2rem;
+}
+
+.chart-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--arsenal-gold);
+}
+
+.chart-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-item.joao-castelo {
+    color: #FF3333;
+}
+
+.legend-item.super-computer {
+    color: #4ECDC4;
+}
+
+canvas {
+    max-height: 500px;
+}
+
+.hover-info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 51, 51, 0.1);
+    border-left: 4px solid var(--arsenal-gold);
+    border-radius: 5px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.info-text {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.fixture-details {
+    width: 100%;
+}
+
+.fixture-details p {
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.fixture-details strong {
+    color: var(--arsenal-gold);
+    font-weight: 600;
+}
+
+.match-score {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--arsenal-white);
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.predictor-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    margin: 0.25rem 0;
+}
+
+.predictor-info.joao-info {
+    border-left: 3px solid #FF3333;
+}
+
+.predictor-info.computer-info {
+    border-left: 3px solid #4ECDC4;
+}
+
+.instagram-link {
+    color: var(--arsenal-gold);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #FF3333;
+    text-decoration: underline;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+}
+
+/* Footer */
+.footer {
+    background: var(--card-bg);
+    border-top: 2px solid rgba(255, 51, 51, 0.3);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.footer-link {
+    color: var(--arsenal-gold);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    color: var(--arsenal-red);
+    text-decoration: underline;
+}
+
+.buymeacoffee:hover {
+    color: #FFDD00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .chart-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .chart-subtitle {
+        gap: 1rem;
+    }
+
+    .chart-wrapper {
+        padding: 1.5rem;
+    }
+
+    .main {
+        padding: 1.5rem 1rem;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "joao-e-o-supercomputador",
+  "version": "1.0.0",
+  "description": "Um site estático que visualiza as previsões de título da Premier League entre João Castelo Branco e o Supercomputador",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server -p 8000 -o",
+    "serve": "http-server -p 8000"
+  },
+  "keywords": [
+    "arsenal",
+    "premier-league",
+    "previsao",
+    "joao-castelo-branco"
+  ],
+  "author": "@gugacavalieri",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
