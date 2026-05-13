@@ -143,7 +143,7 @@ function updateHoverInfo(dataIndex) {
                     <img src="${team?.emblem || ''}" alt="${team?.shortname}" class="table-emblem">
                     <span class="table-team-name">${team?.shortname || entry.team}</span>
                 </td>
-                <td class="table-points">${entry.points} pt</td>
+                <td class="table-points">${entry.points} pts</td>
             </tr>
         `;
     }).join('') : '';
@@ -166,16 +166,14 @@ function updateHoverInfo(dataIndex) {
                 ${resultsHTML}
             </div>
             ${tableSection}
-            <p>
+            <div class="predictors-container">
                 <span class="predictor-info joao-info">
                     João: <strong>${fixture.joaoProb}%</strong>
                 </span>
-            </p>
-            <p>
                 <span class="predictor-info computer-info">
-                    Super: <strong>${fixture.superComputerProb}%</strong>
+                    Opta: <strong>${fixture.superComputerProb}%</strong>
                 </span>
-            </p>
+            </div>
         </div>
     `;
 
@@ -201,32 +199,23 @@ function formatDate(dateString) {
 }
 
 // Carregar dados ao iniciar
-document.addEventListener('DOMContentLoaded', () => {
-    loadData();
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadData();
 
-    // Add canvas mouse tracking for tooltip positioning
+    // Show the latest fixture by default
+    if (fixturesData.length > 0) {
+        const latestIndex = fixturesData.length - 1;
+        updateHoverInfo(latestIndex);
+    }
+
+    // Add click handler to show info bar
     const canvas = document.getElementById('predictionChart');
-    canvas.addEventListener('mousemove', (e) => {
-        const hoverInfo = document.getElementById('hoverInfo');
-        if (hoverInfo.classList.contains('visible')) {
-            const rect = canvas.getBoundingClientRect();
-            let x = e.clientX;
-            let y = e.clientY - 60; // offset above mouse
+    canvas.addEventListener('click', (e) => {
+        const points = chart.getElementsAtEventForMode(e, 'index', { intersect: false }, true);
 
-            // Prevent tooltip from going off screen
-            const tooltip = hoverInfo;
-            if (x + 200 > window.innerWidth) {
-                x = window.innerWidth - 220;
-            }
-            if (x < 20) {
-                x = 20;
-            }
-            if (y < 20) {
-                y = e.clientY + 20; // move below mouse if too high
-            }
-
-            hoverInfo.style.left = x + 'px';
-            hoverInfo.style.top = y + 'px';
+        if (points.length > 0) {
+            const dataIndex = points[0].index;
+            updateHoverInfo(dataIndex);
         }
     });
 });
