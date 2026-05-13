@@ -26,10 +26,11 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, var(--arsenal-red) 0%, #D62121 100%);
+    background: transparent;
     padding: 3rem 1rem;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(255, 51, 51, 0.3);
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-content {
@@ -198,8 +199,9 @@ canvas {
     color: var(--arsenal-gold);
     text-decoration: none;
     font-size: 0.85rem;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 .instagram-link:hover {
