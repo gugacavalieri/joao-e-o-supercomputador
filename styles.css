@@ -122,8 +122,10 @@ canvas {
     border-radius: 8px;
     min-width: 320px;
     max-width: 420px;
+    max-height: 600px;
+    overflow-y: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
@@ -241,6 +243,76 @@ canvas {
     color: var(--arsenal-gold);
     min-width: 50px;
     text-align: center;
+}
+
+.table-section {
+    margin: 1rem 0 0.5rem 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.table-title {
+    margin: 0 0 0.5rem 0;
+    color: var(--arsenal-white);
+    font-size: 0.85rem;
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.75rem;
+}
+
+.league-table tbody tr {
+    background: rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.25rem 0;
+}
+
+.league-table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.table-position {
+    width: 25px;
+    text-align: center;
+    padding: 0.35rem 0.25rem;
+    color: var(--arsenal-gold);
+    font-weight: 600;
+}
+
+.table-team-cell {
+    padding: 0.35rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.table-emblem {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
+    flex-shrink: 0;
+}
+
+.table-team-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--arsenal-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-points {
+    width: 40px;
+    text-align: center;
+    padding: 0.35rem 0.25rem;
+    color: var(--arsenal-white);
+    font-weight: 600;
 }
 
 /* Footer */

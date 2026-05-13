@@ -17,11 +17,11 @@ async function loadData() {
 
 function initChart() {
     const ctx = document.getElementById('predictionChart').getContext('2d');
-    
+
     const labels = fixturesData.map(fixture => `Rodada ${fixture.week}`);
     const joaoData = fixturesData.map(fixture => fixture.joaoProb);
     const computerData = fixturesData.map(fixture => fixture.superComputerProb);
-    
+
     chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -111,14 +111,14 @@ function updateHoverInfo(dataIndex) {
         clearTimeout(hideTimeout);
         hideTimeout = null;
     }
-    
+
     const fixture = fixturesData[dataIndex];
     const hoverInfo = document.getElementById('hoverInfo');
-    
+
     const resultsHTML = fixture.results.map(result => {
         const homeTeam = teamsData[result.homeTeam];
         const awayTeam = teamsData[result.awayTeam];
-        
+
         return `
             <div class="match-result">
                 <div class="team">
@@ -133,13 +133,39 @@ function updateHoverInfo(dataIndex) {
             </div>
         `;
     }).join('');
-    
+
+    const tableHTML = fixture.table ? fixture.table.map(entry => {
+        const team = teamsData[entry.team];
+        return `
+            <tr>
+                <td class="table-position">${entry.position}</td>
+                <td class="table-team-cell">
+                    <img src="${team?.emblem || ''}" alt="${team?.shortname}" class="table-emblem">
+                    <span class="table-team-name">${team?.shortname || entry.team}</span>
+                </td>
+                <td class="table-points">${entry.points} pt</td>
+            </tr>
+        `;
+    }).join('') : '';
+
+    const tableSection = fixture.table ? `
+        <div class="table-section">
+            <p class="table-title"><strong>Tabela</strong></p>
+            <table class="league-table">
+                <tbody>
+                    ${tableHTML}
+                </tbody>
+            </table>
+        </div>
+    ` : '';
+
     const infoHTML = `
         <div class="fixture-details">
             <p><strong>Rodada ${fixture.week}</strong> - ${formatDate(fixture.date)}</p>
             <div class="matches-container">
                 ${resultsHTML}
             </div>
+            ${tableSection}
             <p>
                 <span class="predictor-info joao-info">
                     João: <strong>${fixture.joaoProb}%</strong>
@@ -152,7 +178,7 @@ function updateHoverInfo(dataIndex) {
             </p>
         </div>
     `;
-    
+
     hoverInfo.innerHTML = infoHTML;
     hoverInfo.classList.add('visible');
 }
@@ -177,7 +203,7 @@ function formatDate(dateString) {
 // Carregar dados ao iniciar
 document.addEventListener('DOMContentLoaded', () => {
     loadData();
-    
+
     // Add canvas mouse tracking for tooltip positioning
     const canvas = document.getElementById('predictionChart');
     canvas.addEventListener('mousemove', (e) => {
@@ -186,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rect = canvas.getBoundingClientRect();
             let x = e.clientX;
             let y = e.clientY - 60; // offset above mouse
-            
+
             // Prevent tooltip from going off screen
             const tooltip = hoverInfo;
             if (x + 200 > window.innerWidth) {
@@ -198,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (y < 20) {
                 y = e.clientY + 20; // move below mouse if too high
             }
-            
+
             hoverInfo.style.left = x + 'px';
             hoverInfo.style.top = y + 'px';
         }
