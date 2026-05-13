@@ -246,7 +246,43 @@
         {"homeTeam": "leeds", "homeScore": 0, "awayTeam": "manchester-city", "awayScore": 1}
       ],
       "table": []
+    },
+    {
+      "week": 30,
+      "date": "2026-03-16",
+      "episode": 416,
+      "joaoProb": 80,
+      "superComputerProb": 97,
+      "results": [
+        {"homeTeam": "arsenal", "homeScore": 2, "awayTeam": "everton", "awayScore": 0},
+        {"homeTeam": "west-ham", "homeScore": 1, "awayTeam": "manchester-city", "awayScore": 1}
+      ],
+      "table": []
+    },
+   {
+      "week": 32,
+      "date": "2026-04-13",
+      "episode": 419,
+      "joaoProb": 45,
+      "superComputerProb": 90,
+      "results": [
+        {"homeTeam": "arsenal", "homeScore": 1, "awayTeam": "bournemouth", "awayScore": 2},
+        {"homeTeam": "chelsea", "homeScore": 0, "awayTeam": "manchester-city", "awayScore": 3}
+      ],
+      "table": []
+    },
+   {
+      "week": 35,
+      "date": "2026-05-05",
+      "episode": 422,
+      "joaoProb": 70,
+      "superComputerProb": 0,
+      "results": [
+        {"homeTeam": "arsenal", "homeScore": 3, "awayTeam": "fulham", "awayScore": 0},
+        {"homeTeam": "everton", "homeScore": 3, "awayTeam": "manchester-city", "awayScore": 3}
+      ],
+      "table": []
     }
   ],
-  "latest": 414
+  "latest": 422
 }
