@@ -1,10 +1,13 @@
 let chart = null;
 let fixturesData = [];
+let teamsData = {};
+let hideTimeout = null;
 
 async function loadData() {
     try {
         const response = await fetch('data.json');
         const data = await response.json();
+        teamsData = data.teams;
         fixturesData = data.fixtures;
         initChart();
     } catch (error) {
@@ -15,7 +18,7 @@ async function loadData() {
 function initChart() {
     const ctx = document.getElementById('predictionChart').getContext('2d');
     
-    const labels = fixturesData.map(fixture => `Rdada ${fixture.week}`);
+    const labels = fixturesData.map(fixture => `Rodada ${fixture.week}`);
     const joaoData = fixturesData.map(fixture => fixture.joaoProb);
     const computerData = fixturesData.map(fixture => fixture.superComputerProb);
     
@@ -96,8 +99,6 @@ function initChart() {
                 if (activeElements.length > 0) {
                     const dataIndex = activeElements[0].index;
                     updateHoverInfo(dataIndex);
-                } else {
-                    resetHoverInfo();
                 }
             }
         }
@@ -105,12 +106,33 @@ function initChart() {
 }
 
 function updateHoverInfo(dataIndex) {
+    // Clear any pending hide timeout
+    if (hideTimeout) {
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+    }
+    
     const fixture = fixturesData[dataIndex];
     const hoverInfo = document.getElementById('hoverInfo');
     
-    const resultsHTML = fixture.results.map(result => 
-        `<p class="match-score">${result.homeTeam} ${result.homeScore} x ${result.awayScore} ${result.awayTeam}</p>`
-    ).join('');
+    const resultsHTML = fixture.results.map(result => {
+        const homeTeam = teamsData[result.homeTeam];
+        const awayTeam = teamsData[result.awayTeam];
+        
+        return `
+            <div class="match-result">
+                <div class="team">
+                    <img src="${homeTeam?.emblem || ''}" alt="${homeTeam?.shortname}" class="team-emblem">
+                    <span class="team-name">${homeTeam?.shortname || result.homeTeam}</span>
+                </div>
+                <div class="score">${result.homeScore} x ${result.awayScore}</div>
+                <div class="team">
+                    <span class="team-name">${awayTeam?.shortname || result.awayTeam}</span>
+                    <img src="${awayTeam?.emblem || ''}" alt="${awayTeam?.shortname}" class="team-emblem">
+                </div>
+            </div>
+        `;
+    }).join('');
     
     const infoHTML = `
         <div class="fixture-details">
@@ -120,24 +142,31 @@ function updateHoverInfo(dataIndex) {
             </div>
             <p>
                 <span class="predictor-info joao-info">
-                    João Castelo Branco: <strong>${fixture.joaoProb}%</strong>
-                    <a href="https://www.instagram.com/j.castelobranco/" target="_blank" class="instagram-link">@j.castelobranco</a>
+                    João: <strong>${fixture.joaoProb}%</strong>
                 </span>
             </p>
             <p>
                 <span class="predictor-info computer-info">
-                    Supercomputador: <strong>${fixture.superComputerProb}%</strong>
+                    Super: <strong>${fixture.superComputerProb}%</strong>
                 </span>
             </p>
         </div>
     `;
     
     hoverInfo.innerHTML = infoHTML;
+    hoverInfo.classList.add('visible');
 }
 
 function resetHoverInfo() {
-    const hoverInfo = document.getElementById('hoverInfo');
-    hoverInfo.innerHTML = '<p class="info-text">Passe o mouse sobre o gráfico para ver os detalhes</p>';
+    // Delay hiding to prevent flickering
+    if (hideTimeout) {
+        clearTimeout(hideTimeout);
+    }
+    hideTimeout = setTimeout(() => {
+        const hoverInfo = document.getElementById('hoverInfo');
+        hoverInfo.classList.remove('visible');
+        hideTimeout = null;
+    }, 200); // 200ms delay
 }
 
 function formatDate(dateString) {
@@ -146,4 +175,32 @@ function formatDate(dateString) {
 }
 
 // Carregar dados ao iniciar
-document.addEventListener('DOMContentLoaded', loadData);
+document.addEventListener('DOMContentLoaded', () => {
+    loadData();
+    
+    // Add canvas mouse tracking for tooltip positioning
+    const canvas = document.getElementById('predictionChart');
+    canvas.addEventListener('mousemove', (e) => {
+        const hoverInfo = document.getElementById('hoverInfo');
+        if (hoverInfo.classList.contains('visible')) {
+            const rect = canvas.getBoundingClientRect();
+            let x = e.clientX;
+            let y = e.clientY - 60; // offset above mouse
+            
+            // Prevent tooltip from going off screen
+            const tooltip = hoverInfo;
+            if (x + 200 > window.innerWidth) {
+                x = window.innerWidth - 220;
+            }
+            if (x < 20) {
+                x = 20;
+            }
+            if (y < 20) {
+                y = e.clientY + 20; // move below mouse if too high
+            }
+            
+            hoverInfo.style.left = x + 'px';
+            hoverInfo.style.top = y + 'px';
+        }
+    });
+});
