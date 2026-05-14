@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "dev": "http-server -p 8000 -o",
-    "serve": "http-server -p 8000"
+    "serve": "http-server -p 8000",
+    "prettier:check": "prettier . --check",
+    "prettier:write": "prettier . --write"
   },
   "keywords": [
     "arsenal",
@@ -16,7 +18,6 @@
   "author": "@gugacavalieri",
   "license": "MIT",
   "devDependencies": {
-    "html-validate": "^11.1.0",
     "http-server": "^14.1.1",
     "prettier": "3.8.3"
   }
