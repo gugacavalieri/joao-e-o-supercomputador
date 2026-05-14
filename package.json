@@ -4,8 +4,10 @@
   "description": "Um site estático que visualiza as previsões de título da Premier League entre João Castelo Branco e o Supercomputador",
   "main": "index.html",
   "scripts": {
-    "dev": "http-server -p 8000 -o",
-    "serve": "http-server -p 8000",
+    "dev": "vite --open",
+    "serve": "vite preview",
+    "build": "vite build",
+    "preview": "vite preview",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write"
   },
@@ -18,7 +20,8 @@
   "author": "@gugacavalieri",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "prettier": "3.8.3"
+    "prettier": "3.8.3",
+    "terser": "^5.47.1",
+    "vite": "^8.0.12"
   }
 }
