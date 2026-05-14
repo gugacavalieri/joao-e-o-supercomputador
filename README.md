@@ -24,9 +24,16 @@ O site exibe um gráfico interativo mostrando a evolução das probabilidades ao
 
 ```
 ├── index.html          # Página principal
+├── main.js             # Entry point para Vite (importa CSS e JavaScript)
 ├── styles.css          # Estilos globais
 ├── script.js           # Lógica do gráfico e interatividade
 ├── data.json           # Dados das previsões e resultados
+├── vite.config.js      # Configuração do build (Vite)
+├── public/             # Arquivos estáticos (copiados como-estão)
+│   ├── data.json       # Dados (copiado para dist/)
+│   └── favicon.ico     # Favicon
+├── dist/               # Saída da build (gerada por `npm run build`)
+├── package.json        # Dependências e scripts
 └── README.md          # Este arquivo
 ```
 
@@ -81,6 +88,8 @@ O site exibe um gráfico interativo mostrando a evolução das probabilidades ao
 
 ## 🚀 Como Usar
 
+### Configuração Inicial
+
 1. Clone o repositório:
 
 ```bash
@@ -88,14 +97,66 @@ git clone https://github.com/gugacavalieri/joao-e-o-supercomputador.git
 cd joao-e-o-supercomputador
 ```
 
-2. Abra `index.html` no navegador (ou use um servidor local):
+2. Instale as dependências:
 
 ```bash
 npm install
+```
+
+### Desenvolvimento Local
+
+Para desenvolver localmente com hot reload:
+
+```bash
 npm run dev
 ```
 
-3. Atualize os dados em `data.json` com as previsões reais e resultados
+Isso inicia o servidor de desenvolvimento Vite na porta 5173 e abre o navegador automaticamente.
+
+### Build para Produção
+
+Para gerar uma versão otimizada e minificada:
+
+```bash
+npm run build
+```
+
+Isso cria a pasta `dist/` com todos os arquivos minificados prontos para deploy.
+
+### Visualizar Build Localmente
+
+Para testar a versão de produção localmente:
+
+```bash
+npm run serve
+```
+
+### Outros Scripts
+
+- `npm run prettier:check` - Verifica formatação do código
+- `npm run prettier:write` - Formata o código automaticamente
+
+## 📦 Build e Minificação
+
+Este projeto usa **Vite** para bundling e minificação:
+
+- **CSS**: Minificado automaticamente
+- **JavaScript**: Minificado com Terser
+- **HTML**: Minificado para produção
+- **Arquivos estáticos**: Copiados do diretório `public/`
+
+A build reduz significativamente o tamanho dos arquivos:
+- `index.html`: 3.69 kB (gzip: 1.35 kB)
+- `styles.css`: 5.69 kB (gzip: 1.70 kB)
+- `main.js`: 4.51 kB (gzip: 1.68 kB)
+
+## 🔄 Deploy Automático
+
+Este projeto está configurado para deploy automático no GitHub Pages via GitHub Actions:
+
+- Cada push para a branch `main` dispara a build
+- Os arquivos minificados da pasta `dist/` são deployed automaticamente
+- Workflow configurado em `.github/workflows/deploy.yml`
 
 ## 📝 Atualizando Dados
 
@@ -103,10 +164,13 @@ Edite o arquivo `data.json` com as novas rodadas e previsões. O gráfico será 
 
 ## 🛠️ Tecnologias
 
-- HTML5
-- CSS3 (Grid, Flexbox, Gradients)
-- JavaScript Vanilla
-- [Chart.js](https://www.chartjs.org/) - Gráficos
+- **HTML5**
+- **CSS3** (Grid, Flexbox, Gradients)
+- **JavaScript Vanilla**
+- **[Vite](https://vitejs.dev/)** - Build tool e dev server
+- **[Terser](https://terser.org/)** - JavaScript minifier
+- **[Chart.js](https://www.chartjs.org/)** - Gráficos interativos
+- **GitHub Actions** - CI/CD automático
 
 ## 🔗 Links
 
