@@ -1,64 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>João e o Supercomputador</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header-content">
-            <h1 class="header-title">👨 João vs. SuperComputador 🤖</h1>
-            <p class="header-subtitle">A incansável luta do nosso querido <a href="https://www.instagram.com/j.castelobranco" target="_blank" class="instagram-link">@j.castelobranco</a> e o SuperComputador para tentar prever o imprevisível: O Título dos Gooners ❤️ ⚽️</p>
-        </div>
+      <div class="header-content">
+        <h1 class="header-title">👨 João vs. SuperComputador 🤖</h1>
+        <p class="header-subtitle">
+          A incansável luta do nosso querido
+          <a
+            href="https://www.instagram.com/j.castelobranco"
+            target="_blank"
+            class="instagram-link"
+            >@j.castelobranco</a
+          >
+          e o SuperComputador para tentar prever o imprevisível: O Título dos
+          Gooners ❤️ ⚽️
+        </p>
+      </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <div class="chart-wrapper">
-                <div class="chart-header">
-                    <h2>Previsões de Título - Premier League 2025/2026</h2>
-                    <p class="chart-subtitle">
-                        <span class="legend-item joao-castelo">■ João Castelo Branco (Gooooners!)</span>
-                        <span class="legend-item super-computer">■ Supercomputador Opta</span>
-                    </p>
-                </div>
-                <div class="hover-info" id="hoverInfo">
-                    <p class="info-text">Clique em um ponto para ver os detalhes</p>
-                </div>
-                <canvas id="predictionChart"></canvas>
-            </div>
-
-            <div class="data-sources-section">
-                <h3>Metodologia</h3>
-                <ul class="sources-list">
-                    <li>
-                        <strong>João Castelo Branco:</strong> As probabilidades foram extraídas do Podcast <a href="https://www.youtube.com/watch?v=o5HnnWRVy40&list=PLjh6q28sC8-oa4E8hDySasF41IXmXOJ15" target="_blank" class="footer-link">Correspondetes Premier</a> 🧡 👍
-                    </li>
-                    <li>
-                        <strong>Premier League:</strong> Os resultados vieram do site oficial da Premier League
-                    </li>
-                    <li>
-                        <strong>Supercomputador:</strong> As probabilidades do supercomputador vieram da conta <a href="https://twitter.com/OptaAnalyst" target="_blank" class="footer-link">OptaAnalyst</a>.
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="chart-wrapper">
+          <div class="chart-header">
+            <h2>Previsões de Título - Premier League 2025/2026</h2>
+            <p class="chart-subtitle">
+              <span class="legend-item joao-castelo"
+                >■ João Castelo Branco (Gooooners!)</span
+              >
+              <span class="legend-item super-computer"
+                >■ Supercomputador Opta</span
+              >
+            </p>
+          </div>
+          <div class="hover-info" id="hoverInfo">
+            <p class="info-text">Clique em um ponto para ver os detalhes</p>
+          </div>
+          <canvas id="predictionChart"></canvas>
         </div>
+
+        <div class="data-sources-section">
+          <h3>Metodologia</h3>
+          <ul class="sources-list">
+            <li>
+              <strong>João Castelo Branco:</strong> As probabilidades foram
+              extraídas do Podcast
+              <a
+                href="https://www.youtube.com/watch?v=o5HnnWRVy40&list=PLjh6q28sC8-oa4E8hDySasF41IXmXOJ15"
+                target="_blank"
+                class="footer-link"
+                >Correspondetes Premier</a
+              >
+              🧡 👍
+            </li>
+            <li>
+              <strong>Premier League:</strong> Os resultados vieram do site
+              oficial da Premier League
+            </li>
+            <li>
+              <strong>Supercomputador:</strong> As probabilidades do
+              supercomputador vieram da conta
+              <a
+                href="https://twitter.com/OptaAnalyst"
+                target="_blank"
+                class="footer-link"
+                >OptaAnalyst</a
+              >.
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>
-                <a href="https://github.com/gugacavalieri" target="_blank" class="footer-link">@gugacavalieri</a> | <a href="https://buymeacoffee.com/gugacavalieri" target="_blank" class="footer-link buymeacoffee">☕ Buy me a coffee</a>
-            </p>
-            <p>
-              Gooooooners! ❤️⚽️
-            </p>
-        </div>
+      <div class="footer-content">
+        <p>
+          <a
+            href="https://github.com/gugacavalieri"
+            target="_blank"
+            class="footer-link"
+            >@gugacavalieri</a
+          >
+          |
+          <a
+            href="https://buymeacoffee.com/gugacavalieri"
+            target="_blank"
+            class="footer-link buymeacoffee"
+            >☕ Buy me a coffee</a
+          >
+        </p>
+        <p>Gooooooners! ❤️⚽️</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1FMMYP2QM5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1FMMYP2QM5");
+    </script>
+  </body>
 </html>
