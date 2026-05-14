@@ -1,514 +1,397 @@
 {
+  "teams": {
+    "arsenal": {
+      "fullname": "Arsenal Football Club",
+      "shortname": "ARS",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+      "website": "https://www.arsenal.com"
+    },
+    "manchester-city": {
+      "fullname": "Manchester City Football Club",
+      "shortname": "MCI",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+      "website": "https://www.mancity.com"
+    },
+    "manchester-united": {
+      "fullname": "Manchester United Football Club",
+      "shortname": "MUN",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
+      "website": "https://www.manutd.com"
+    },
+    "liverpool": {
+      "fullname": "Liverpool Football Club",
+      "shortname": "LIV",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
+      "website": "https://www.liverpoolfc.com"
+    },
+    "chelsea": {
+      "fullname": "Chelsea Football Club",
+      "shortname": "CHE",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+      "website": "https://www.chelseafc.com"
+    },
+    "aston-villa": {
+      "fullname": "Aston Villa Football Club",
+      "shortname": "AVL",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/9/9a/Aston_Villa_FC_new_crest.svg",
+      "website": "https://www.avfc.co.uk"
+    },
+    "tottenham": {
+      "fullname": "Tottenham Hotspur Football Club",
+      "shortname": "TOT",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
+      "website": "https://www.tottenhamhotspur.com"
+    },
+    "brighton": {
+      "fullname": "Brighton and Hove Albion Football Club",
+      "shortname": "BHA",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/d/d0/Brighton_and_Hove_Albion_FC_crest.svg",
+      "website": "https://www.brightonandhovealbion.com"
+    },
+    "burnley": {
+      "fullname": "Burnley Football Club",
+      "shortname": "BUR",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/6/6d/Burnley_FC_Logo.svg",
+      "website": "https://www.burnleyfc.com"
+    },
+    "newcastle": {
+      "fullname": "Newcastle United Football Club",
+      "shortname": "NEW",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg",
+      "website": "https://www.nufc.co.uk"
+    },
+    "fulham": {
+      "fullname": "Fulham Football Club",
+      "shortname": "FUL",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg",
+      "website": "https://www.fulhamfc.com"
+    },
+    "crystal-palace": {
+      "fullname": "Crystal Palace Football Club",
+      "shortname": "CRY",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/a/a2/Crystal_Palace_FC_logo_%282022%29.svg",
+      "website": "https://www.cpfc.co.uk"
+    },
+    "bournemouth": {
+      "fullname": "AFC Bournemouth",
+      "shortname": "BOU",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg",
+      "website": "https://www.afcb.co.uk"
+    },
+    "nottingham-forest": {
+      "fullname": "Nottingham Forest Football Club",
+      "shortname": "NTF",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg",
+      "website": "https://www.nottinghamforest.co.uk"
+    },
+    "leeds": {
+      "fullname": "Leeds United Football Club",
+      "shortname": "LEE",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/54/Leeds_United_F.C._logo.svg",
+      "website": "https://www.leedsunited.com"
+    },
+    "everton": {
+      "fullname": "Everton Football Club",
+      "shortname": "EVE",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg",
+      "website": "https://www.evertonfc.com"
+    },
+    "west-ham": {
+      "fullname": "West Ham United Football Club",
+      "shortname": "WHU",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg",
+      "website": "https://www.whufc.com"
+    },
+    "wolverhampton": {
+      "fullname": "Wolverhampton Wanderers Football Club",
+      "shortname": "WOL",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c9/Wolverhampton_Wanderers_FC_crest.svg",
+      "website": "https://www.wolves.co.uk"
+    },
+    "brentford": {
+      "fullname": "Brentford Football Club",
+      "shortname": "BRE",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg",
+      "website": "https://www.brentfordfc.com"
+    },
+    "sunderland": {
+      "fullname": "Sunderland Association Football Club",
+      "shortname": "SUN",
+      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/77/Logo_Sunderland.svg",
+      "website": "https://www.sunderlandfc.com"
+    }
+  },
   "fixtures": [
     {
-      "week": 1,
-      "date": "2024-08-16",
-      "joaoProb": 8,
-      "superComputerProb": 12,
-      "results": [
-        {
-          "homeTeam": "Manchester United",
-          "homeScore": 1,
-          "awayTeam": "Fulham",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
       "week": 2,
-      "date": "2024-08-24",
-      "joaoProb": 7,
-      "superComputerProb": 14,
+      "date": "2025-08-26",
+      "episode": 387,
+      "joaoProb": 60,
+      "superComputerProb": 33,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Aston Villa",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Chelsea",
-          "homeScore": 1,
-          "awayTeam": "Manchester City",
-          "awayScore": 2
-        }
+        {"homeTeam": "arsenal", "homeScore": 5, "awayTeam": "leeds", "awayScore": 0},
+        {"homeTeam": "manchester-city", "homeScore": 0, "awayTeam": "tottenham", "awayScore": 2},
+        {"homeTeam": "newcastle", "homeScore": 2, "awayTeam": "liverpool", "awayScore": 3}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 6, "position": 1},
+        {"team": "tottenham", "points": 6, "position": 2},
+        {"team": "liverpool", "points": 6, "position": 3}
       ]
     },
     {
       "week": 3,
-      "date": "2024-08-31",
-      "joaoProb": 10,
-      "superComputerProb": 16,
+      "date": "2025-09-02",
+      "episode": 388,
+      "joaoProb": 40,
+      "superComputerProb": 10,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Bournemouth",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 4,
-      "date": "2024-09-14",
-      "joaoProb": 12,
-      "superComputerProb": 18,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 3,
-          "awayTeam": "Manchester United",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Brighton",
-          "homeScore": 0,
-          "awayTeam": "Newcastle",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 5,
-      "date": "2024-09-21",
-      "joaoProb": 15,
-      "superComputerProb": 22,
-      "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 2,
-          "awayTeam": "Nottingham Forest",
-          "awayScore": 0
-        }
+        {"homeTeam": "liverpool", "homeScore": 1, "awayTeam": "arsenal", "awayScore": 0},
+        {"homeTeam": "chelsea", "homeScore": 2, "awayTeam": "fulham", "awayScore": 0},
+        {"homeTeam": "tottenham", "homeScore": 0, "awayTeam": "bournemouth", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "liverpool", "points": 9, "position": 1},
+        {"team": "chelsea", "points": 7, "position": 2},
+        {"team": "arsenal", "points": 6, "position": 3}
       ]
     },
     {
       "week": 6,
-      "date": "2024-09-28",
-      "joaoProb": 18,
-      "superComputerProb": 25,
+      "date": "2025-09-29",
+      "episode": 392,
+      "joaoProb": 60,
+      "superComputerProb": 34,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 1,
-          "awayTeam": "Leicester City",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Tottenham",
-          "awayScore": 1
-        }
+        {"homeTeam": "crystal-palace", "homeScore": 2, "awayTeam": "liverpool", "awayScore": 1},
+        {"homeTeam": "newcastle", "homeScore": 1, "awayTeam": "arsenal", "awayScore": 2},
+        {"homeTeam": "tottenham", "homeScore": 1, "awayTeam": "wolverhampton", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "liverpool", "points": 15, "position": 1},
+        {"team": "arsenal", "points": 13, "position": 2},
+        {"team": "crystal-palace", "points": 12, "position": 3}
       ]
     },
     {
       "week": 7,
-      "date": "2024-10-05",
-      "joaoProb": 22,
-      "superComputerProb": 28,
+      "date": "2025-10-06",
+      "episode": 393,
+      "joaoProb": 60,
+      "superComputerProb": 44,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Chelsea",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 8,
-      "date": "2024-10-12",
-      "joaoProb": 25,
-      "superComputerProb": 32,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Crystal Palace",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 3,
-          "awayTeam": "Fulham",
-          "awayScore": 0
-        }
+        {"homeTeam": "arsenal", "homeScore": 2, "awayTeam": "west-ham", "awayScore": 0},
+        {"homeTeam": "chelsea", "homeScore": 2, "awayTeam": "liverpool", "awayScore": 1},
+        {"homeTeam": "leeds", "homeScore": 1, "awayTeam": "tottenham", "awayScore": 2}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 16, "position": 1},
+        {"team": "liverpool", "points": 15, "position": 2},
+        {"team": "tottenham", "points": 14, "position": 3}
       ]
     },
     {
       "week": 9,
-      "date": "2024-10-19",
-      "joaoProb": 28,
-      "superComputerProb": 35,
+      "date": "2025-10-28",
+      "episode": 395,
+      "joaoProb": 67,
+      "superComputerProb": 67,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 3,
-          "awayTeam": "Brighton",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 10,
-      "date": "2024-10-26",
-      "joaoProb": 32,
-      "superComputerProb": 38,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 3,
-          "awayTeam": "Tottenham",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Manchester United",
-          "awayScore": 2
-        }
-      ]
-    },
-    {
-      "week": 11,
-      "date": "2024-11-02",
-      "joaoProb": 35,
-      "superComputerProb": 42,
-      "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Aston Villa",
-          "awayScore": 2
-        }
-      ]
-    },
-    {
-      "week": 12,
-      "date": "2024-11-09",
-      "joaoProb": 38,
-      "superComputerProb": 45,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Nottingham Forest",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Chelsea",
-          "homeScore": 1,
-          "awayTeam": "Newcastle",
-          "awayScore": 0
-        }
-      ]
-    },
-    {
-      "week": 13,
-      "date": "2024-11-16",
-      "joaoProb": 42,
-      "superComputerProb": 48,
-      "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 1,
-          "awayTeam": "Liverpool",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 14,
-      "date": "2024-11-23",
-      "joaoProb": 45,
-      "superComputerProb": 52,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 3,
-          "awayTeam": "Fulham",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Brighton",
-          "homeScore": 1,
-          "awayTeam": "Manchester United",
-          "awayScore": 0
-        }
-      ]
-    },
-    {
-      "week": 15,
-      "date": "2024-11-30",
-      "joaoProb": 48,
-      "superComputerProb": 55,
-      "results": [
-        {
-          "homeTeam": "Chelsea",
-          "homeScore": 2,
-          "awayTeam": "Manchester United",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 16,
-      "date": "2024-12-07",
-      "joaoProb": 52,
-      "superComputerProb": 58,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Manchester City",
-          "awayScore": 2
-        },
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 1,
-          "awayTeam": "Everton",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 17,
-      "date": "2024-12-14",
-      "joaoProb": 55,
-      "superComputerProb": 62,
-      "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 3,
-          "awayTeam": "Bournemouth",
-          "awayScore": 0
-        }
-      ]
-    },
-    {
-      "week": 18,
-      "date": "2024-12-21",
-      "joaoProb": 58,
-      "superComputerProb": 65,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Ipswich Town",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 3,
-          "awayTeam": "Leicester City",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 19,
-      "date": "2024-12-28",
-      "joaoProb": 62,
-      "superComputerProb": 68,
-      "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 3,
-          "awayTeam": "Everton",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 20,
-      "date": "2025-01-04",
-      "joaoProb": 65,
-      "superComputerProb": 70,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 1,
-          "awayTeam": "Brighton",
-          "awayScore": 0
-        },
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Aston Villa",
-          "awayScore": 0
-        }
+        {"homeTeam": "arsenal", "homeScore": 1, "awayTeam": "crystal-palace", "awayScore": 0},
+        {"homeTeam": "bournemouth", "homeScore": 2, "awayTeam": "nottingham-forest", "awayScore": 0},
+        {"homeTeam": "everton", "homeScore": 0, "awayTeam": "tottenham", "awayScore": 3}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 22, "position": 1},
+        {"team": "bournemouth", "points": 18, "position": 2},
+        {"team": "tottenham", "points": 17, "position": 3}
       ]
     },
     {
       "week": 21,
-      "date": "2025-01-11",
-      "joaoProb": 68,
-      "superComputerProb": 72,
+      "date": "2026-01-16",
+      "episode": 406,
+      "joaoProb": 82,
+      "superComputerProb": 86,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Leicester City",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 22,
-      "date": "2025-01-18",
-      "joaoProb": 70,
-      "superComputerProb": 75,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 3,
-          "awayTeam": "Manchester United",
-          "awayScore": 2
-        },
-        {
-          "homeTeam": "Chelsea",
-          "homeScore": 1,
-          "awayTeam": "Tottenham",
-          "awayScore": 1
-        }
+        {"homeTeam": "arsenal", "homeScore": 0, "awayTeam": "liverpool", "awayScore": 0},
+        {"homeTeam": "manchester-city", "homeScore": 1, "awayTeam": "brighton", "awayScore": 1},
+        {"homeTeam": "crystal-palace", "homeScore": 0, "awayTeam": "aston-villa", "awayScore": 0}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 49, "position": 1},
+        {"team": "manchester-city", "points": 43, "position": 2},
+        {"team": "aston-villa", "points": 43, "position": 3}
       ]
     },
     {
       "week": 23,
-      "date": "2025-01-25",
-      "joaoProb": 72,
-      "superComputerProb": 76,
+      "date": "2026-01-27",
+      "episode": 409,
+      "joaoProb": 60,
+      "superComputerProb": 80,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Manchester United",
-          "homeScore": 2,
-          "awayTeam": "Chelsea",
-          "awayScore": 2
-        }
+        {"homeTeam": "arsenal", "homeScore": 2, "awayTeam": "manchester-united", "awayScore": 3},
+        {"homeTeam": "manchester-city", "homeScore": 2, "awayTeam": "wolverhampton", "awayScore": 0},
+        {"homeTeam": "newcastle", "homeScore": 0, "awayTeam": "aston-villa", "awayScore": 2}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 50, "position": 1},
+        {"team": "manchester-city", "points": 46, "position": 2},
+        {"team": "aston-villa", "points": 46, "position": 3}
       ]
     },
     {
       "week": 24,
-      "date": "2025-02-01",
-      "joaoProb": 75,
-      "superComputerProb": 78,
+      "date": "2026-02-03",
+      "episode": 410,
+      "joaoProb": 80,
+      "superComputerProb": 91,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "Arsenal",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 2,
-          "awayTeam": "Newcastle",
-          "awayScore": 1
-        }
-      ]
-    },
-    {
-      "week": 25,
-      "date": "2025-02-08",
-      "joaoProb": 72,
-      "superComputerProb": 80,
-      "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 2,
-          "awayTeam": "Tottenham",
-          "awayScore": 0
-        }
+        {"homeTeam": "leeds", "homeScore": 0, "awayTeam": "arsenal", "awayScore": 4},
+        {"homeTeam": "tottenham", "homeScore": 2, "awayTeam": "manchester-city", "awayScore": 2},
+        {"homeTeam": "aston-villa", "homeScore": 0, "awayTeam": "brentford", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 53, "position": 1},
+        {"team": "manchester-city", "points": 47, "position": 2},
+        {"team": "aston-villa", "points": 46, "position": 3}
       ]
     },
     {
       "week": 26,
-      "date": "2025-02-15",
-      "joaoProb": 70,
-      "superComputerProb": 82,
+      "date": "2026-02-16",
+      "episode": 412,
+      "joaoProb": 60,
+      "superComputerProb": 90,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 4,
-          "awayTeam": "Crystal Palace",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 3,
-          "awayTeam": "Fulham",
-          "awayScore": 0
-        }
+        {"homeTeam": "brentford", "homeScore": 1, "awayTeam": "arsenal", "awayScore": 1},
+        {"homeTeam": "manchester-city", "homeScore": 3, "awayTeam": "fulham", "awayScore": 0},
+        {"homeTeam": "aston-villa", "homeScore": 1, "awayTeam": "brighton", "awayScore": 0}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 58, "position": 1},
+        {"team": "manchester-city", "points": 53, "position": 2},
+        {"team": "aston-villa", "points": 50, "position": 3}
       ]
     },
     {
       "week": 27,
-      "date": "2025-02-22",
-      "joaoProb": 68,
-      "superComputerProb": 83,
+      "date": "2026-02-23",
+      "episode": 413,
+      "joaoProb": 65,
+      "superComputerProb": 80,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 2,
-          "awayTeam": "West Ham",
-          "awayScore": 1
-        }
+        {"homeTeam": "tottenham", "homeScore": 1, "awayTeam": "arsenal", "awayScore": 4},
+        {"homeTeam": "manchester-city", "homeScore": 2, "awayTeam": "newcastle", "awayScore": 1},
+        {"homeTeam": "aston-villa", "homeScore": 1, "awayTeam": "leeds", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 61, "position": 1},
+        {"team": "manchester-city", "points": 56, "position": 2},
+        {"team": "aston-villa", "points": 51, "position": 3}
       ]
     },
     {
       "week": 28,
-      "date": "2025-03-01",
-      "joaoProb": 65,
-      "superComputerProb": 84,
+      "date": "2026-03-03",
+      "episode": 414,
+      "joaoProb": 55,
+      "superComputerProb": 92,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Manchester City",
-          "homeScore": 3,
-          "awayTeam": "Newcastle",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Brighton",
-          "awayScore": 0
-        }
-      ]
-    },
-    {
-      "week": 29,
-      "date": "2025-03-08",
-      "joaoProb": 62,
-      "superComputerProb": 85,
-      "results": [
-        {
-          "homeTeam": "Arsenal",
-          "homeScore": 2,
-          "awayTeam": "Wolverhampton",
-          "awayScore": 0
-        }
+        {"homeTeam": "arsenal", "homeScore": 2, "awayTeam": "chelsea", "awayScore": 1},
+        {"homeTeam": "leeds", "homeScore": 0, "awayTeam": "manchester-city", "awayScore": 1},
+        {"homeTeam": "manchester-united", "homeScore": 2, "awayTeam": "crystal-palace", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 64, "position": 1},
+        {"team": "manchester-city", "points": 59, "position": 2},
+        {"team": "manchester-united", "points": 51, "position": 3}
       ]
     },
     {
       "week": 30,
-      "date": "2025-03-15",
-      "joaoProb": 60,
-      "superComputerProb": 86,
+      "date": "2026-03-16",
+      "episode": 416,
+      "joaoProb": 80,
+      "superComputerProb": 97,
+      "reviewed": true,
       "results": [
-        {
-          "homeTeam": "Liverpool",
-          "homeScore": 1,
-          "awayTeam": "Manchester United",
-          "awayScore": 1
-        },
-        {
-          "homeTeam": "Chelsea",
-          "homeScore": 0,
-          "awayTeam": "Tottenham",
-          "awayScore": 3
-        }
+        {"homeTeam": "arsenal", "homeScore": 2, "awayTeam": "everton", "awayScore": 0},
+        {"homeTeam": "west-ham", "homeScore": 1, "awayTeam": "manchester-city", "awayScore": 1},
+        {"homeTeam": "manchester-united", "homeScore": 3, "awayTeam": "aston-villa", "awayScore": 1}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 70, "position": 1},
+        {"team": "manchester-city", "points": 61, "position": 2},
+        {"team": "manchester-united", "points": 54, "position": 3}
+      ]
+    },
+   {
+      "week": 32,
+      "date": "2026-04-13",
+      "episode": 419,
+      "joaoProb": 45,
+      "superComputerProb": 87,
+      "reviewed": true,
+      "results": [
+        {"homeTeam": "arsenal", "homeScore": 1, "awayTeam": "bournemouth", "awayScore": 2},
+        {"homeTeam": "chelsea", "homeScore": 0, "awayTeam": "manchester-city", "awayScore": 3},
+        {"homeTeam": "manchester-united", "homeScore": 1, "awayTeam": "leeds", "awayScore": 2}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 70, "position": 1},
+        {"team": "manchester-city", "points": 64, "position": 2},
+        {"team": "manchester-united", "points": 55, "position": 3}
+      ]
+    },
+   {
+      "week": 33,
+      "date": "2026-04-19",
+      "episode": 420,
+      "joaoProb": 45,
+      "superComputerProb": 73,
+      "reviewed": true,
+      "results": [
+        {"homeTeam": "manchester-city", "homeScore": 2, "awayTeam": "arsenal", "awayScore": 1},
+        {"homeTeam": "chelsea", "homeScore": 0, "awayTeam": "manchester-united", "awayScore": 1},
+        {"homeTeam": "aston-villa", "homeScore": 4, "awayTeam": "sunderland", "awayScore": 3}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 70, "position": 1},
+        {"team": "manchester-city", "points": 67, "position": 2},
+        {"team": "manchester-united", "points": 58, "position": 3}
+      ]
+    },
+   {
+      "week": 35,
+      "date": "2026-05-05",
+      "episode": 422,
+      "joaoProb": 70,
+      "superComputerProb": 86,
+      "reviewed": true,
+      "results": [
+        {"homeTeam": "arsenal", "homeScore": 3, "awayTeam": "fulham", "awayScore": 0},
+        {"homeTeam": "everton", "homeScore": 3, "awayTeam": "manchester-city", "awayScore": 3},
+        {"homeTeam": "manchester-united", "homeScore": 3, "awayTeam": "liverpool", "awayScore": 2}
+      ],
+      "table": [
+        {"team": "arsenal", "points": 76, "position": 1},
+        {"team": "manchester-city", "points": 71, "position": 2},
+        {"team": "manchester-united", "points": 64, "position": 3}
       ]
     }
-  ]
+  ],
+  "latest": 422
 }
