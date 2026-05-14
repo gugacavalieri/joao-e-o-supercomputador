@@ -146,6 +146,7 @@ Este projeto usa **Vite** para bundling e minificação:
 - **Arquivos estáticos**: Copiados do diretório `public/`
 
 A build reduz significativamente o tamanho dos arquivos:
+
 - `index.html`: 3.69 kB (gzip: 1.35 kB)
 - `styles.css`: 5.69 kB (gzip: 1.70 kB)
 - `main.js`: 4.51 kB (gzip: 1.68 kB)
