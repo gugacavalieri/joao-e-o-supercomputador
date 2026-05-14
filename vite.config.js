@@ -1,14 +1,13 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    outDir: 'dist',
-    minify: 'terser',
+    outDir: "dist",
+    minify: "terser",
     rollupOptions: {
       input: {
-        main: './index.html'
-      }
-    }
-  }
-})
-
+        main: "./index.html",
+      },
+    },
+  },
+});

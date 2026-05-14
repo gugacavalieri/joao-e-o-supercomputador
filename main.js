@@ -1,5 +1,5 @@
 // Import styles
-import './styles.css'
+import "./styles.css";
 
 // Import and execute the app script
-import './script.js'
+import "./script.js";
