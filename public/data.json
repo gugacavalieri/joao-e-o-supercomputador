@@ -616,7 +616,40 @@
         { "team": "manchester-city", "points": 71, "position": 2 },
         { "team": "manchester-united", "points": 64, "position": 3 }
       ]
+    },
+    {
+      "week": 38,
+      "date": "2026-05-24",
+      "episode": 425,
+      "joaoProb": 100,
+      "superComputerProb": 100,
+      "reviewed": true,
+      "results": [
+        {
+          "homeTeam": "crystal-palace",
+          "homeScore": 1,
+          "awayTeam": "arsenal",
+          "awayScore": 2
+        },
+        {
+          "homeTeam": "manchester-city",
+          "homeScore": 1,
+          "awayTeam": "aston-villa",
+          "awayScore": 2
+        },
+        {
+          "homeTeam": "brighton",
+          "homeScore": 0,
+          "awayTeam": "manchester-united",
+          "awayScore": 3
+        }
+      ],
+      "table": [
+        { "team": "arsenal", "points": 85, "position": 1 },
+        { "team": "manchester-city", "points": 78, "position": 2 },
+        { "team": "manchester-united", "points": 71, "position": 3 }
+      ]
     }
   ],
-  "latest": 422
+  "lastUpdated": "2026-05-25T09:30:00Z"
 }
