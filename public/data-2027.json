@@ -1,0 +1,97 @@
+{
+  "season": "2026/2027",
+  "league": "Premier League",
+  "fixtures": [
+    {
+      "week": 1,
+      "date": "2026-08-23",
+      "episode": 427,
+      "joaoProb": 0,
+      "superComputerProb": 38,
+      "reviewed": true,
+      "results": [
+        {
+          "homeTeam": "brighton",
+          "homeScore": 4,
+          "awayTeam": "aston-villa",
+          "awayScore": 0
+        },
+        {
+          "homeTeam": "arsenal",
+          "homeScore": 3,
+          "awayTeam": "coventry-city",
+          "awayScore": 0
+        },
+        {
+          "homeTeam": "brentford",
+          "homeScore": 3,
+          "awayTeam": "tottenham",
+          "awayScore": 0
+        }
+      ],
+      "table": [
+        {
+          "team": "brighton",
+          "points": 3,
+          "position": 1
+        },
+        {
+          "team": "arsenal",
+          "points": 3,
+          "position": 2
+        },
+        {
+          "team": "brentford",
+          "points": 3,
+          "position": 3
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "date": "2026-09-06",
+      "episode": 430,
+      "joaoProb": 80,
+      "superComputerProb": 55,
+      "reviewed": true,
+      "results": [
+        {
+          "homeTeam": "manchester-city",
+          "homeScore": 1,
+          "awayTeam": "coventry-city",
+          "awayScore": 0
+        },
+        {
+          "homeTeam": "arsenal",
+          "homeScore": 2,
+          "awayTeam": "chelsea",
+          "awayScore": 1
+        },
+        {
+          "homeTeam": "hull-city",
+          "homeScore": 0,
+          "awayTeam": "aston-villa",
+          "awayScore": 0
+        }
+      ],
+      "table": [
+        {
+          "team": "manchester-city",
+          "points": 9,
+          "position": 1
+        },
+        {
+          "team": "arsenal",
+          "points": 9,
+          "position": 2
+        },
+        {
+          "team": "hull-city",
+          "points": 7,
+          "position": 3
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2026-09-11T02:30:00Z"
+}

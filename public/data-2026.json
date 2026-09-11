@@ -1,126 +1,6 @@
 {
-  "teams": {
-    "arsenal": {
-      "fullname": "Arsenal Football Club",
-      "shortname": "ARS",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
-      "website": "https://www.arsenal.com"
-    },
-    "manchester-city": {
-      "fullname": "Manchester City Football Club",
-      "shortname": "MCI",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
-      "website": "https://www.mancity.com"
-    },
-    "manchester-united": {
-      "fullname": "Manchester United Football Club",
-      "shortname": "MUN",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
-      "website": "https://www.manutd.com"
-    },
-    "liverpool": {
-      "fullname": "Liverpool Football Club",
-      "shortname": "LIV",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
-      "website": "https://www.liverpoolfc.com"
-    },
-    "chelsea": {
-      "fullname": "Chelsea Football Club",
-      "shortname": "CHE",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
-      "website": "https://www.chelseafc.com"
-    },
-    "aston-villa": {
-      "fullname": "Aston Villa Football Club",
-      "shortname": "AVL",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/9/9a/Aston_Villa_FC_new_crest.svg",
-      "website": "https://www.avfc.co.uk"
-    },
-    "tottenham": {
-      "fullname": "Tottenham Hotspur Football Club",
-      "shortname": "TOT",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
-      "website": "https://www.tottenhamhotspur.com"
-    },
-    "brighton": {
-      "fullname": "Brighton and Hove Albion Football Club",
-      "shortname": "BHA",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/d/d0/Brighton_and_Hove_Albion_FC_crest.svg",
-      "website": "https://www.brightonandhovealbion.com"
-    },
-    "burnley": {
-      "fullname": "Burnley Football Club",
-      "shortname": "BUR",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/6/6d/Burnley_FC_Logo.svg",
-      "website": "https://www.burnleyfc.com"
-    },
-    "newcastle": {
-      "fullname": "Newcastle United Football Club",
-      "shortname": "NEW",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg",
-      "website": "https://www.nufc.co.uk"
-    },
-    "fulham": {
-      "fullname": "Fulham Football Club",
-      "shortname": "FUL",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg",
-      "website": "https://www.fulhamfc.com"
-    },
-    "crystal-palace": {
-      "fullname": "Crystal Palace Football Club",
-      "shortname": "CRY",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/a/a2/Crystal_Palace_FC_logo_%282022%29.svg",
-      "website": "https://www.cpfc.co.uk"
-    },
-    "bournemouth": {
-      "fullname": "AFC Bournemouth",
-      "shortname": "BOU",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg",
-      "website": "https://www.afcb.co.uk"
-    },
-    "nottingham-forest": {
-      "fullname": "Nottingham Forest Football Club",
-      "shortname": "NTF",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg",
-      "website": "https://www.nottinghamforest.co.uk"
-    },
-    "leeds": {
-      "fullname": "Leeds United Football Club",
-      "shortname": "LEE",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/5/54/Leeds_United_F.C._logo.svg",
-      "website": "https://www.leedsunited.com"
-    },
-    "everton": {
-      "fullname": "Everton Football Club",
-      "shortname": "EVE",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg",
-      "website": "https://www.evertonfc.com"
-    },
-    "west-ham": {
-      "fullname": "West Ham United Football Club",
-      "shortname": "WHU",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg",
-      "website": "https://www.whufc.com"
-    },
-    "wolverhampton": {
-      "fullname": "Wolverhampton Wanderers Football Club",
-      "shortname": "WOL",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c9/Wolverhampton_Wanderers_FC_crest.svg",
-      "website": "https://www.wolves.co.uk"
-    },
-    "brentford": {
-      "fullname": "Brentford Football Club",
-      "shortname": "BRE",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg",
-      "website": "https://www.brentfordfc.com"
-    },
-    "sunderland": {
-      "fullname": "Sunderland Association Football Club",
-      "shortname": "SUN",
-      "emblem": "https://upload.wikimedia.org/wikipedia/en/7/77/Logo_Sunderland.svg",
-      "website": "https://www.sunderlandfc.com"
-    }
-  },
+  "season": "2025/2026",
+  "league": "Premier League",
   "fixtures": [
     {
       "week": 2,
@@ -150,9 +30,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 6, "position": 1 },
-        { "team": "tottenham", "points": 6, "position": 2 },
-        { "team": "liverpool", "points": 6, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 6,
+          "position": 1
+        },
+        {
+          "team": "tottenham",
+          "points": 6,
+          "position": 2
+        },
+        {
+          "team": "liverpool",
+          "points": 6,
+          "position": 3
+        }
       ]
     },
     {
@@ -183,9 +75,21 @@
         }
       ],
       "table": [
-        { "team": "liverpool", "points": 9, "position": 1 },
-        { "team": "chelsea", "points": 7, "position": 2 },
-        { "team": "arsenal", "points": 6, "position": 3 }
+        {
+          "team": "liverpool",
+          "points": 9,
+          "position": 1
+        },
+        {
+          "team": "chelsea",
+          "points": 7,
+          "position": 2
+        },
+        {
+          "team": "arsenal",
+          "points": 6,
+          "position": 3
+        }
       ]
     },
     {
@@ -216,9 +120,21 @@
         }
       ],
       "table": [
-        { "team": "liverpool", "points": 15, "position": 1 },
-        { "team": "arsenal", "points": 13, "position": 2 },
-        { "team": "crystal-palace", "points": 12, "position": 3 }
+        {
+          "team": "liverpool",
+          "points": 15,
+          "position": 1
+        },
+        {
+          "team": "arsenal",
+          "points": 13,
+          "position": 2
+        },
+        {
+          "team": "crystal-palace",
+          "points": 12,
+          "position": 3
+        }
       ]
     },
     {
@@ -249,9 +165,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 16, "position": 1 },
-        { "team": "liverpool", "points": 15, "position": 2 },
-        { "team": "tottenham", "points": 14, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 16,
+          "position": 1
+        },
+        {
+          "team": "liverpool",
+          "points": 15,
+          "position": 2
+        },
+        {
+          "team": "tottenham",
+          "points": 14,
+          "position": 3
+        }
       ]
     },
     {
@@ -282,9 +210,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 22, "position": 1 },
-        { "team": "bournemouth", "points": 18, "position": 2 },
-        { "team": "tottenham", "points": 17, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 22,
+          "position": 1
+        },
+        {
+          "team": "bournemouth",
+          "points": 18,
+          "position": 2
+        },
+        {
+          "team": "tottenham",
+          "points": 17,
+          "position": 3
+        }
       ]
     },
     {
@@ -315,9 +255,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 49, "position": 1 },
-        { "team": "manchester-city", "points": 43, "position": 2 },
-        { "team": "aston-villa", "points": 43, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 49,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 43,
+          "position": 2
+        },
+        {
+          "team": "aston-villa",
+          "points": 43,
+          "position": 3
+        }
       ]
     },
     {
@@ -348,9 +300,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 50, "position": 1 },
-        { "team": "manchester-city", "points": 46, "position": 2 },
-        { "team": "aston-villa", "points": 46, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 50,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 46,
+          "position": 2
+        },
+        {
+          "team": "aston-villa",
+          "points": 46,
+          "position": 3
+        }
       ]
     },
     {
@@ -381,9 +345,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 53, "position": 1 },
-        { "team": "manchester-city", "points": 47, "position": 2 },
-        { "team": "aston-villa", "points": 46, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 53,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 47,
+          "position": 2
+        },
+        {
+          "team": "aston-villa",
+          "points": 46,
+          "position": 3
+        }
       ]
     },
     {
@@ -414,9 +390,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 58, "position": 1 },
-        { "team": "manchester-city", "points": 53, "position": 2 },
-        { "team": "aston-villa", "points": 50, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 58,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 53,
+          "position": 2
+        },
+        {
+          "team": "aston-villa",
+          "points": 50,
+          "position": 3
+        }
       ]
     },
     {
@@ -447,9 +435,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 61, "position": 1 },
-        { "team": "manchester-city", "points": 56, "position": 2 },
-        { "team": "aston-villa", "points": 51, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 61,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 56,
+          "position": 2
+        },
+        {
+          "team": "aston-villa",
+          "points": 51,
+          "position": 3
+        }
       ]
     },
     {
@@ -480,9 +480,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 64, "position": 1 },
-        { "team": "manchester-city", "points": 59, "position": 2 },
-        { "team": "manchester-united", "points": 51, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 64,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 59,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 51,
+          "position": 3
+        }
       ]
     },
     {
@@ -513,9 +525,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 70, "position": 1 },
-        { "team": "manchester-city", "points": 61, "position": 2 },
-        { "team": "manchester-united", "points": 54, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 70,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 61,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 54,
+          "position": 3
+        }
       ]
     },
     {
@@ -546,9 +570,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 70, "position": 1 },
-        { "team": "manchester-city", "points": 64, "position": 2 },
-        { "team": "manchester-united", "points": 55, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 70,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 64,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 55,
+          "position": 3
+        }
       ]
     },
     {
@@ -579,9 +615,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 70, "position": 1 },
-        { "team": "manchester-city", "points": 67, "position": 2 },
-        { "team": "manchester-united", "points": 58, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 70,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 67,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 58,
+          "position": 3
+        }
       ]
     },
     {
@@ -612,9 +660,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 76, "position": 1 },
-        { "team": "manchester-city", "points": 71, "position": 2 },
-        { "team": "manchester-united", "points": 64, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 76,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 71,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 64,
+          "position": 3
+        }
       ]
     },
     {
@@ -645,9 +705,21 @@
         }
       ],
       "table": [
-        { "team": "arsenal", "points": 85, "position": 1 },
-        { "team": "manchester-city", "points": 78, "position": 2 },
-        { "team": "manchester-united", "points": 71, "position": 3 }
+        {
+          "team": "arsenal",
+          "points": 85,
+          "position": 1
+        },
+        {
+          "team": "manchester-city",
+          "points": 78,
+          "position": 2
+        },
+        {
+          "team": "manchester-united",
+          "points": 71,
+          "position": 3
+        }
       ]
     }
   ],
