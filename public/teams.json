@@ -1,0 +1,134 @@
+{
+  "arsenal": {
+    "fullname": "Arsenal Football Club",
+    "shortname": "ARS",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "website": "https://www.arsenal.com"
+  },
+  "manchester-city": {
+    "fullname": "Manchester City Football Club",
+    "shortname": "MCI",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "website": "https://www.mancity.com"
+  },
+  "manchester-united": {
+    "fullname": "Manchester United Football Club",
+    "shortname": "MUN",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
+    "website": "https://www.manutd.com"
+  },
+  "liverpool": {
+    "fullname": "Liverpool Football Club",
+    "shortname": "LIV",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg",
+    "website": "https://www.liverpoolfc.com"
+  },
+  "chelsea": {
+    "fullname": "Chelsea Football Club",
+    "shortname": "CHE",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+    "website": "https://www.chelseafc.com"
+  },
+  "aston-villa": {
+    "fullname": "Aston Villa Football Club",
+    "shortname": "AVL",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/9/9a/Aston_Villa_FC_new_crest.svg",
+    "website": "https://www.avfc.co.uk"
+  },
+  "tottenham": {
+    "fullname": "Tottenham Hotspur Football Club",
+    "shortname": "TOT",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
+    "website": "https://www.tottenhamhotspur.com"
+  },
+  "brighton": {
+    "fullname": "Brighton and Hove Albion Football Club",
+    "shortname": "BHA",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/d/d0/Brighton_and_Hove_Albion_FC_crest.svg",
+    "website": "https://www.brightonandhovealbion.com"
+  },
+  "burnley": {
+    "fullname": "Burnley Football Club",
+    "shortname": "BUR",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/6/6d/Burnley_FC_Logo.svg",
+    "website": "https://www.burnleyfc.com"
+  },
+  "newcastle": {
+    "fullname": "Newcastle United Football Club",
+    "shortname": "NEW",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg",
+    "website": "https://www.nufc.co.uk"
+  },
+  "fulham": {
+    "fullname": "Fulham Football Club",
+    "shortname": "FUL",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg",
+    "website": "https://www.fulhamfc.com"
+  },
+  "crystal-palace": {
+    "fullname": "Crystal Palace Football Club",
+    "shortname": "CRY",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/a/a2/Crystal_Palace_FC_logo_%282022%29.svg",
+    "website": "https://www.cpfc.co.uk"
+  },
+  "bournemouth": {
+    "fullname": "AFC Bournemouth",
+    "shortname": "BOU",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg",
+    "website": "https://www.afcb.co.uk"
+  },
+  "nottingham-forest": {
+    "fullname": "Nottingham Forest Football Club",
+    "shortname": "NTF",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg",
+    "website": "https://www.nottinghamforest.co.uk"
+  },
+  "leeds": {
+    "fullname": "Leeds United Football Club",
+    "shortname": "LEE",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/5/54/Leeds_United_F.C._logo.svg",
+    "website": "https://www.leedsunited.com"
+  },
+  "everton": {
+    "fullname": "Everton Football Club",
+    "shortname": "EVE",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg",
+    "website": "https://www.evertonfc.com"
+  },
+  "west-ham": {
+    "fullname": "West Ham United Football Club",
+    "shortname": "WHU",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg",
+    "website": "https://www.whufc.com"
+  },
+  "wolverhampton": {
+    "fullname": "Wolverhampton Wanderers Football Club",
+    "shortname": "WOL",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/c/c9/Wolverhampton_Wanderers_FC_crest.svg",
+    "website": "https://www.wolves.co.uk"
+  },
+  "brentford": {
+    "fullname": "Brentford Football Club",
+    "shortname": "BRE",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg",
+    "website": "https://www.brentfordfc.com"
+  },
+  "sunderland": {
+    "fullname": "Sunderland Association Football Club",
+    "shortname": "SUN",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/7/77/Logo_Sunderland.svg",
+    "website": "https://www.sunderlandfc.com"
+  },
+  "hull-city": {
+    "fullname": "Hull City Association Football Club",
+    "shortname": "HUL",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/5/54/Hull_City_A.F.C._logo.svg",
+    "website": "https://wearehullcity.co.uk/"
+  },
+  "coventry-city": {
+    "fullname": "Coventry City Football Club",
+    "shortname": "COV",
+    "emblem": "https://upload.wikimedia.org/wikipedia/en/7/7b/Coventry_City_FC_crest.svg",
+    "website": "https://ccfc.co.uk/"
+  }
+}

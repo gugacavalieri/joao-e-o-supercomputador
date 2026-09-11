@@ -29,9 +29,21 @@
       <div class="container">
         <div class="chart-wrapper">
           <div class="chart-header">
-            <h2>Previsões de Título - Premier League 2025/2026</h2>
-            <h3>Voltamos em Agosto para a temporada 2027</h3>
-            <p class="info-text">Atualizado: 25/05/2026 09:00 MDT</p>
+            <div class="chart-title-row">
+              <h2 id="chartTitle">
+                Previsões de Título - Premier League 2026/2027
+              </h2>
+              <label class="season-switcher" for="seasonSelect">
+                <span class="season-switcher-label">Temporada</span>
+                <select id="seasonSelect" class="season-select">
+                  <option value="data-2027.json" selected>2026/2027</option>
+                  <option value="data-2026.json">2025/2026</option>
+                </select>
+              </label>
+            </div>
+            <p class="info-text" id="lastUpdatedText">
+              Atualizado: 10/09/2026 20:30 MDT
+            </p>
             <p class="info-text">
               Clique em um ponto no gráfico para ver os detalhes
             </p>

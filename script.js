@@ -3,15 +3,74 @@ let fixturesData = [];
 let teamsData = {};
 let hideTimeout = null;
 
-async function loadData() {
+async function loadData(selectedSeasonFile = "data-2027.json") {
   try {
-    const response = await fetch("data.json");
-    const data = await response.json();
-    teamsData = data.teams;
-    fixturesData = data.fixtures;
+    const [teamsResponse, seasonResponse] = await Promise.all([
+      fetch("teams.json"),
+      fetch(selectedSeasonFile),
+    ]);
+
+    if (!teamsResponse.ok) {
+      throw new Error(`Falha ao carregar teams.json: ${teamsResponse.status}`);
+    }
+
+    if (!seasonResponse.ok) {
+      throw new Error(
+        `Falha ao carregar ${selectedSeasonFile}: ${seasonResponse.status}`,
+      );
+    }
+
+    const teams = await teamsResponse.json();
+    const seasonData = await seasonResponse.json();
+
+    teamsData = teams;
+    fixturesData = Array.isArray(seasonData.fixtures)
+      ? seasonData.fixtures
+      : [];
+
+    if (chart) {
+      chart.destroy();
+      chart = null;
+    }
+
+    updateSeasonMeta(seasonData);
     initChart();
+
+    const hoverInfo = document.getElementById("hoverInfo");
+    if (hoverInfo) {
+      hoverInfo.innerHTML = "";
+      hoverInfo.classList.remove("visible");
+    }
+
+    if (fixturesData.length > 0) {
+      const latestIndex = fixturesData.length - 1;
+      updateHoverInfo(latestIndex);
+    }
   } catch (error) {
     console.error("Erro ao carregar dados:", error);
+  }
+}
+
+function updateSeasonMeta(seasonData) {
+  const title = document.getElementById("chartTitle");
+  const lastUpdated = document.getElementById("lastUpdatedText");
+
+  if (title) {
+    const league = seasonData.league || "Premier League";
+    const season = seasonData.season || "2026/2027";
+    title.textContent = `Previsões de Título - ${league} ${season}`;
+  }
+
+  if (lastUpdated && seasonData.lastUpdated) {
+    const date = new Date(seasonData.lastUpdated);
+    lastUpdated.textContent = `Atualizado: ${date.toLocaleString("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    })}`;
   }
 }
 
@@ -208,17 +267,24 @@ function formatDate(dateString) {
 
 // Carregar dados ao iniciar
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadData();
+  const seasonSelect = document.getElementById("seasonSelect");
+  const initialSeason = seasonSelect?.value || "data-2027.json";
 
-  // Show the latest fixture by default
-  if (fixturesData.length > 0) {
-    const latestIndex = fixturesData.length - 1;
-    updateHoverInfo(latestIndex);
+  await loadData(initialSeason);
+
+  if (seasonSelect) {
+    seasonSelect.addEventListener("change", async () => {
+      await loadData(seasonSelect.value);
+    });
   }
 
   // Add click handler to show info bar
   const canvas = document.getElementById("predictionChart");
   canvas.addEventListener("click", (e) => {
+    if (!chart) {
+      return;
+    }
+
     const points = chart.getElementsAtEventForMode(
       e,
       "index",
